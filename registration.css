@@ -1,0 +1,60 @@
+body{
+    font-family: Arial, Helvetica, sans-serif ;
+    background-color:rgba(113, 202, 243, 0.308);
+
+}
+h2{
+    text-align: center;
+}
+form{
+    width: 25%;
+    padding: 10px;
+    background-color:rgb(62, 93, 231) ;
+    height: 550px;
+    margin-left: 680px;
+    margin-right: 450px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+label{
+    display: block;
+    margin: 4px;
+    font-weight: 500;
+    font-style: oblique;
+}
+input[type=text],input[type=password],input[type=tel]input[type=email]textarea{
+    padding: 200px;
+    border: 5px solid whitesmoke;
+    box-sizing: content-box;
+    border-radius: 5px;
+    width: 1000px;
+}
+select{
+    width: 15%;
+    padding: 6px;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+input[type=submit]{
+    color:white;
+    background-color: black;
+    cursor: pointer;
+    margin-top: 15px;
+    padding: 8px;
+    border-radius: 8px;
+    margin-left: 20px;
+    width: 25%;
+    text-size-adjust: 100%;
+    font-size: 18px;
+}
+input[type=submit]
+.registration{
+    width: 590px;
+    margin-left: 15px;
+    margin-right: ;
+}
+.center{
+    text-align: center;
+}

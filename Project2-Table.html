@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/table.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-Table</title>
+</head>
+<body>
+    <style>table,th,tr,td{
+        border: solid black 1px;
+        padding: 8px;
+        text-align: center;
+    }
+
+    </style>
+    <table style="width: 75%;color: rgb(0, 0, 0);">
+    <tbody><tr>
+        <th>Team</th>
+        <th>City</th>
+        <th>Home Ground</th>
+        <th>Debut</th>
+        <th>Owner</th>
+    </tr>
+    <tr>
+        <td>Chennai Super Kings</td>
+        <td>Chennai,TamilNadu</td>
+        <td>M.A.Chidambaram Stadium</td>
+        <td>2008</td>
+        <td><ul><li>N.Srinivasan</li></ul></td>
+    </tr>
+    <tr>
+        <td>Delhi Capitals</td>
+        <td>New Delhi</td>
+        <td>Arun Jaitley Stadium</td>
+        <td></td>
+        <td><ul><li>Saijjan Jindal</li><li>G.M.Rao</li></ul></td>
+    </tr>
+    <tr>
+        <td>Gujarat Titans</td>
+        <td>Ahmeddabad,Gujarat</td>
+        <td>Narendra Modi Stadium</td>
+        <td>2022</td>
+        <td><ul><li>Steve Koltes</li><li>Juhi Chawla</li><li>Jey Mehta</li></ul></td>
+    </tr>
+    <tr>
+        <td>Kolkata Knight Riders</td>
+        <td>Kolkata,West Bengal</td>
+        <td>Eden Garden</td>
+        <td>2008</td>
+        <td><ul><li>Shah Rukh Khan</li><li>Juhi Chawla</li><li>Jay Mehta</li></ul></td>
+    </tr>
+    <tr>
+        <td>Lucknow Super Giants</td>
+        <td>Lucknow ,Utter Pradesh</td>
+        <td>BRSABV Ekana cricket Stadium</td>
+        <td>2022</td>
+        <td><ul><li>Sanjiv Goenka</li></ul></td>
+    </tr>
+    </tbody></table>
+    <br><center>
+    <form action="http://127.0.0.1:5500/new.html" method="get">
+        <div>
+        <label for="UserName">UserName</label>
+        <input type="text" name="UserName" id="UserName" maxlength="20">
+        </div>
+        <div>
+            <label for="Password">Password</label>
+            <input type="password" name="password" id="password" maxlength="20">
+        </div>
+        <div>
+            <label for="Email">Email</label>
+            <input type="email" name="Email" id="Email" required="">
+        </div>
+        <button type="Submit">Submit</button>
+        
+        
+    </form>
+    </center>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

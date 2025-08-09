@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+}
+.container{
+    display: flex;
+    padding: 100px;
+    justify-content:space-around ;
+    align-items:center ;
+    background-color: darkgray;
+    height: 750px;
+}
+.left-section{
+    width: 400px;
+
+}
+.left-section h1{
+    color: black;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.left-section p{
+    color: white;
+    font-size: 20px;
+}
+.right-section{
+    width: 400px;
+    padding: 40px;
+    background-color: lightgrey;
+    border-radius: 20px;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+}
+.input{
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    font-size: 15px;
+}
+.login{
+    padding: 15px;
+    margin: 10px 0;
+    background-color: darkgray;
+    border: 10px;
+    color: whitesmoke;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.forgot{
+    color:  grey;
+    text-align: center;
+    margin: 10px;
+    display: block;
+}
+hr{
+    margin: 10px;
+    background-color: black;
+    height: 2px;
+
+}
+.create{
+    display: block;
+    padding: 15px;
+    background-color: darkgray;
+    color: whitesmoke;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
