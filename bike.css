@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+}
+nav{
+    background-color: black;
+    padding: 10px;
+    position: fixed;
+    width: 100%;  
+    /*z-index: 100;*/ 
+}
+nav a{
+    color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    margin: 0 15px;
+}
+nav a:hover{
+    color: grey;
+}
+section{
+    padding: 80px 20px;
+}
+#home{
+    background: url("pexels-nishantaneja-2437197.jpg") no-repeat center center/cover ;
+    height: 100vh;
+    color: whitesmoke;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#specs{
+    background: whitesmoke;
+}
+#bike{
+    display:inline-block;
+    gap: 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    border-radius:10px ;
+    text-align: center;
+}
+.bike-img{
+    width: 100%;
+    border-radius: 10px;
+}
+#contact{
+    background-color: whitesmoke;
+}
+form{
+    background: url("pexels-pragyanbezbo-1715185.jpg ");
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 10px;
+
+}
+input,textarea,button{
+    width: 93%;
+    margin: 5px 5px;
+    padding: 10px;
+
+}
+button{
+    background-color: grey;
+    color: darkgray;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: black
+}
+#Thankyou{
+    text-align: center;
+    display: none;
+    padding: 50px;
+}
+.Availablebikes{
+    padding: 40px;
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+#bikelist{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}

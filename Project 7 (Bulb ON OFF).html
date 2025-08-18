@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://127.0.0.1:5500/p1.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-1(Bulb ON OFF)</title>
+    <style>
+        body{
+            background: white;
+            color: black;
+        }
+        h1{
+            text-align: center;
+        }
+        #img-div{
+            margin: auto;
+            height: 250px;
+            width: 250px;
+        }
+        img{
+            height: 250px;
+            width: 250px;
+        }
+        button{
+            height: 50px;
+            width: 70px;
+            background: black;
+            color: white;
+            border-radius: 20px;
+            font-size:x-large ;
+            font-weight: 700;
+        }
+        #btn_div{
+            margin: auto;
+            width: 200px;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <h1>Can we do a basic JS Project????</h1>
+    <div id="img-div">
+        <img src="./Project 7 (Bulb ON OFF)_files/1000_F_77999958_tZYT7xWlSJewLgsMYY3CrAWvYITlWYTF.jpg" alt="" id="image">
+    </div>
+    <div id="btn_div">
+        <button type="submit" onclick="bulbON()">ON</button>
+        <button type="submit" onclick="bulbOFF()">OFF</button>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+<script>
+    function bulbON(){
+        document.getElementById("image").src="./light-bulb-illustration-png.png";
+    }
+    function bulbOFF(){
+        document.getElementById("image").src="./1000_F_77999958_tZYT7xWlSJewLgsMYY3CrAWvYITlWYTF.jpg";
+    }
+</script>
+</body></html>
